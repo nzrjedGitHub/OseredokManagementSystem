@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/n/7SFaQ1+p6HQttS7NXqLRxw4Z74hKaWURzI2MHK1IGNcyRXGfQ0/EHKc3A/PsAOUfgOabJAK5OinwxpXezbA==",
+  "dgSpecHash": "/7x4BJKWNGyKFbd8ZwA56ZTlj2QicfJwGblf96D1ChEtD9Vx9x1qbEN6XWgoW6T43IzzPeEfSZLaDbvWP838yQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\noobi\\source\\repos\\OseredokManagementSystem\\OseredokManagementSystem\\OseredokManagementSystem.csproj",
+  "projectFilePath": "C:\\GitHubRepository\\OseredokManagementSystem\\OseredokManagementSystem\\OseredokManagementSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\noobi\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\noobi\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

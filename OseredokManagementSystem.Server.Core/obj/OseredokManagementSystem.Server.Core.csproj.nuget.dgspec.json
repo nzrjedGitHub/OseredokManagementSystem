@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\noobi\\source\\repos\\OseredokManagementSystem\\OseredokManagementSystem.Server.Core\\OseredokManagementSystem.Server.Core.csproj": {}
+    "C:\\GitHubRepository\\OseredokManagementSystem\\OseredokManagementSystem.Server.Core\\OseredokManagementSystem.Server.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\noobi\\source\\repos\\OseredokManagementSystem\\OseredokManagementSystem.Server.Core\\OseredokManagementSystem.Server.Core.csproj": {
+    "C:\\GitHubRepository\\OseredokManagementSystem\\OseredokManagementSystem.Server.Core\\OseredokManagementSystem.Server.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\noobi\\source\\repos\\OseredokManagementSystem\\OseredokManagementSystem.Server.Core\\OseredokManagementSystem.Server.Core.csproj",
+        "projectUniqueName": "C:\\GitHubRepository\\OseredokManagementSystem\\OseredokManagementSystem.Server.Core\\OseredokManagementSystem.Server.Core.csproj",
         "projectName": "OseredokManagementSystem.Server.Core",
-        "projectPath": "C:\\Users\\noobi\\source\\repos\\OseredokManagementSystem\\OseredokManagementSystem.Server.Core\\OseredokManagementSystem.Server.Core.csproj",
+        "projectPath": "C:\\GitHubRepository\\OseredokManagementSystem\\OseredokManagementSystem.Server.Core\\OseredokManagementSystem.Server.Core.csproj",
         "packagesPath": "C:\\Users\\noobi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\noobi\\source\\repos\\OseredokManagementSystem\\OseredokManagementSystem.Server.Core\\obj\\",
+        "outputPath": "C:\\GitHubRepository\\OseredokManagementSystem\\OseredokManagementSystem.Server.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\noobi\\AppData\\Roaming\\NuGet\\NuGet.Config",

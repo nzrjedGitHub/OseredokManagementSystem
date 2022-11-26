@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MwC9qy96FoPif3SSnxdAyzdtXta0wYGjkU0uh/xqtktB/Nj/CqxAxzcvmjWwKECOaVRbOek6jkORf1CgsUWX2A==",
+  "dgSpecHash": "gDhZDTm+VuXVbVrdC5mk8ZmiqsRVjubO0tM8Ia9vnJCJd+oZIQkUxAs8IZW35EtYmuBcng7EGInjVXGyaV5Qtw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\noobi\\source\\repos\\OseredokManagementSystem\\OseredokManagementSystem.Server.Core\\OseredokManagementSystem.Server.Core.csproj",
+  "projectFilePath": "C:\\GitHubRepository\\OseredokManagementSystem\\OseredokManagementSystem.Server.Core\\OseredokManagementSystem.Server.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\noobi\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\noobi\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
