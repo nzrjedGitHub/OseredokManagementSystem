@@ -1,0 +1,14 @@
+C:\Users\noobi\source\repos\OseredokManagementSystem\OseredokManagementSystem.Server.Core\bin\Debug\net6.0\OseredokManagementSystem.Server.Core.deps.json
+C:\Users\noobi\source\repos\OseredokManagementSystem\OseredokManagementSystem.Server.Core\bin\Debug\net6.0\OseredokManagementSystem.Server.Core.runtimeconfig.json
+C:\Users\noobi\source\repos\OseredokManagementSystem\OseredokManagementSystem.Server.Core\bin\Debug\net6.0\OseredokManagementSystem.Server.Core.dll
+C:\Users\noobi\source\repos\OseredokManagementSystem\OseredokManagementSystem.Server.Core\bin\Debug\net6.0\OseredokManagementSystem.Server.Core.pdb
+C:\Users\noobi\source\repos\OseredokManagementSystem\OseredokManagementSystem.Server.Core\obj\Debug\net6.0\OseredokManagementSystem.Server.Core.csproj.AssemblyReference.cache
+C:\Users\noobi\source\repos\OseredokManagementSystem\OseredokManagementSystem.Server.Core\obj\Debug\net6.0\OseredokManagementSystem.Server.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\noobi\source\repos\OseredokManagementSystem\OseredokManagementSystem.Server.Core\obj\Debug\net6.0\OseredokManagementSystem.Server.Core.AssemblyInfoInputs.cache
+C:\Users\noobi\source\repos\OseredokManagementSystem\OseredokManagementSystem.Server.Core\obj\Debug\net6.0\OseredokManagementSystem.Server.Core.AssemblyInfo.cs
+C:\Users\noobi\source\repos\OseredokManagementSystem\OseredokManagementSystem.Server.Core\obj\Debug\net6.0\OseredokManagementSystem.Server.Core.csproj.CoreCompileInputs.cache
+C:\Users\noobi\source\repos\OseredokManagementSystem\OseredokManagementSystem.Server.Core\obj\Debug\net6.0\OseredokManagementSystem.Server.Core.dll
+C:\Users\noobi\source\repos\OseredokManagementSystem\OseredokManagementSystem.Server.Core\obj\Debug\net6.0\refint\OseredokManagementSystem.Server.Core.dll
+C:\Users\noobi\source\repos\OseredokManagementSystem\OseredokManagementSystem.Server.Core\obj\Debug\net6.0\OseredokManagementSystem.Server.Core.pdb
+C:\Users\noobi\source\repos\OseredokManagementSystem\OseredokManagementSystem.Server.Core\obj\Debug\net6.0\OseredokManagementSystem.Server.Core.genruntimeconfig.cache
+C:\Users\noobi\source\repos\OseredokManagementSystem\OseredokManagementSystem.Server.Core\obj\Debug\net6.0\ref\OseredokManagementSystem.Server.Core.dll

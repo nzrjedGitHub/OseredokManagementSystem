@@ -1,0 +1,12 @@
+C:\Users\noobi\source\repos\OseredokManagementSystem\OseredokManagementSystem.Shared\bin\Debug\net6.0\OseredokManagementSystem.Shared.deps.json
+C:\Users\noobi\source\repos\OseredokManagementSystem\OseredokManagementSystem.Shared\bin\Debug\net6.0\OseredokManagementSystem.Shared.dll
+C:\Users\noobi\source\repos\OseredokManagementSystem\OseredokManagementSystem.Shared\bin\Debug\net6.0\OseredokManagementSystem.Shared.pdb
+C:\Users\noobi\source\repos\OseredokManagementSystem\OseredokManagementSystem.Shared\obj\Debug\net6.0\OseredokManagementSystem.Shared.csproj.AssemblyReference.cache
+C:\Users\noobi\source\repos\OseredokManagementSystem\OseredokManagementSystem.Shared\obj\Debug\net6.0\OseredokManagementSystem.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\noobi\source\repos\OseredokManagementSystem\OseredokManagementSystem.Shared\obj\Debug\net6.0\OseredokManagementSystem.Shared.AssemblyInfoInputs.cache
+C:\Users\noobi\source\repos\OseredokManagementSystem\OseredokManagementSystem.Shared\obj\Debug\net6.0\OseredokManagementSystem.Shared.AssemblyInfo.cs
+C:\Users\noobi\source\repos\OseredokManagementSystem\OseredokManagementSystem.Shared\obj\Debug\net6.0\OseredokManagementSystem.Shared.csproj.CoreCompileInputs.cache
+C:\Users\noobi\source\repos\OseredokManagementSystem\OseredokManagementSystem.Shared\obj\Debug\net6.0\OseredokManagementSystem.Shared.dll
+C:\Users\noobi\source\repos\OseredokManagementSystem\OseredokManagementSystem.Shared\obj\Debug\net6.0\refint\OseredokManagementSystem.Shared.dll
+C:\Users\noobi\source\repos\OseredokManagementSystem\OseredokManagementSystem.Shared\obj\Debug\net6.0\OseredokManagementSystem.Shared.pdb
+C:\Users\noobi\source\repos\OseredokManagementSystem\OseredokManagementSystem.Shared\obj\Debug\net6.0\ref\OseredokManagementSystem.Shared.dll
