@@ -16,7 +16,6 @@ namespace OseredokManagementSystem.Controllers
         }
 
         [HttpGet]
-        [Route("GetSessions")]
         [ProducesResponseType(200, Type = typeof(IEnumerable<SessionReadDto>))]
         public async Task<IEnumerable<SessionReadDto>> GetSessions()
         {
@@ -24,7 +23,7 @@ namespace OseredokManagementSystem.Controllers
         }
 
         [HttpGet]
-        [Route("GetSessionsByGymId/{gymId}")]
+        [Route("gym/{gymId}")]
         [ProducesResponseType(200, Type = typeof(IEnumerable<SessionReadDto>))]
         public async Task<IEnumerable<SessionReadDto>> GetSessionsByGymId(int gymId)
         {
@@ -32,7 +31,7 @@ namespace OseredokManagementSystem.Controllers
         }
 
         [HttpGet]
-        [Route("GetSessionById/{sessionId}")]
+        [Route("{sessionId}")]
         [ProducesResponseType(200, Type = typeof(SessionReadDto))]
         public async Task<SessionReadDto> GetSessionById(int sessionId)
         {
@@ -40,7 +39,7 @@ namespace OseredokManagementSystem.Controllers
         }
 
         [HttpGet]
-        [Route("GetSessionsByClientId/{clientId}")]
+        [Route("client/{clientId}")]
         [ProducesResponseType(200, Type = typeof(IEnumerable<SessionReadDto>))]
         public async Task<IEnumerable<SessionReadDto>> GetSessionsByClientId(int clientId)
         {
@@ -48,7 +47,7 @@ namespace OseredokManagementSystem.Controllers
         }
 
         [HttpGet]
-        [Route("GetSessionsByCoachId/{coachId}")]
+        [Route("coach/{coachId}")]
         [ProducesResponseType(200, Type = typeof(IEnumerable<SessionReadDto>))]
         public async Task<IEnumerable<SessionReadDto>> GetSessionsByCoachId(int coachId)
         {
@@ -56,17 +55,16 @@ namespace OseredokManagementSystem.Controllers
         }
 
         [HttpPut]
-        [Route("UpdateSession")]
         public async Task<SessionReadDto> UpdateSession(SessionUpdateDto sessionUpdateDto)
         {
             return await _sessionRepository.UpdateSessionAsync(sessionUpdateDto);
         }
 
         [HttpDelete]
-        [Route("{id}")]
-        public async Task<int> DeleteAsync(int id)
+        [Route("{sessionId}")]
+        public async Task<int> DeleteAsync(int sessionId)
         {
-            return await _sessionRepository.DeleteAsync(id);
+            return await _sessionRepository.DeleteAsync(sessionId);
         }
 
         [HttpPost]

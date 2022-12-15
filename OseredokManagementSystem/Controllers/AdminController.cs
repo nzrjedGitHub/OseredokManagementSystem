@@ -16,7 +16,6 @@ namespace OseredokManagementSystem.Controllers
         }
 
         [HttpGet]
-        [Route("GetAdmins")]
         [ProducesResponseType(200, Type = typeof(IEnumerable<AdminReadDto>))]
         public async Task<IEnumerable<AdminReadDto>> GetAdmins()
         {
@@ -24,57 +23,56 @@ namespace OseredokManagementSystem.Controllers
         }
 
         [HttpGet]
-        [Route("GetAdminsByGymId/{gymId}")]
+        [Route("gym/{gymId}/")]
         [ProducesResponseType(200, Type = typeof(IEnumerable<AdminReadDto>))]
         public async Task<IEnumerable<AdminReadDto>> GetAdminsByGymId(int gymId)
         {
             return await _adminRepository.GetAdminsByGymIdAsync(gymId);
         }
 
-        [HttpGet]
-        [Route("GetAdminsByLastName/{adminLn}")]
-        [ProducesResponseType(200, Type = typeof(IEnumerable<AdminReadDto>))]
-        public async Task<IEnumerable<AdminReadDto>> GetAdminsByLastName(string adminLn)
-        {
-            return await _adminRepository.GetAdminsByLastNameAsync(adminLn);
-        }
+        //[HttpGet]
+        //[Route("admins/{adminLn}")]
+        //[ProducesResponseType(200, Type = typeof(IEnumerable<AdminReadDto>))]
+        //public async Task<IEnumerable<AdminReadDto>> GetAdminsByLastName(string adminLn)
+        //{
+        //    return await _adminRepository.GetAdminsByLastNameAsync(adminLn);
+        //}
+
+        //[HttpGet]
+        //[Route("GetAdminsByFirstName/{adminFn}")]
+        //[ProducesResponseType(200, Type = typeof(IEnumerable<AdminReadDto>))]
+        //public async Task<IEnumerable<AdminReadDto>> GetAdminsByFirstName(string adminFn)
+        //{
+        //    return await _adminRepository.GetAdminsByFirstNameAsync(adminFn);
+        //}
 
         [HttpGet]
-        [Route("GetAdminsByFirstName/{adminFn}")]
-        [ProducesResponseType(200, Type = typeof(IEnumerable<AdminReadDto>))]
-        public async Task<IEnumerable<AdminReadDto>> GetAdminsByFirstName(string adminFn)
-        {
-            return await _adminRepository.GetAdminsByFirstNameAsync(adminFn);
-        }
-
-        [HttpGet]
-        [Route("GetAdminById/{adminId}")]
+        [Route("{adminId}")]
         [ProducesResponseType(200, Type = typeof(AdminReadDto))]
         public async Task<AdminReadDto> GetAdminById(int adminId)
         {
             return await _adminRepository.GetAdminByIdAsync(adminId);
         }
 
-        [HttpGet]
-        [Route("GetAdminByPhoneNumber/{adminPn}")]
-        [ProducesResponseType(200, Type = typeof(AdminReadDto))]
-        public async Task<AdminReadDto> GetAdminByPhoneNumber(string adminPn)
-        {
-            return await _adminRepository.GetAdminByPhoneNumberAsync(adminPn);
-        }
+        //[HttpGet]
+        //[Route("GetAdminByPhoneNumber/{adminPn}")]
+        //[ProducesResponseType(200, Type = typeof(AdminReadDto))]
+        //public async Task<AdminReadDto> GetAdminByPhoneNumber(string adminPn)
+        //{
+        //    return await _adminRepository.GetAdminByPhoneNumberAsync(adminPn);
+        //}
 
         [HttpPut]
-        [Route("UpdateAdmin")]
         public async Task<AdminReadDto> UpdateAdmin(AdminUpdateDto adminUpdateDto)
         {
             return await _adminRepository.UpdateAdminAsync(adminUpdateDto);
         }
 
         [HttpDelete]
-        [Route("{id}")]
-        public async Task<int> DeleteAsync(int id)
+        [Route("{adminId}")]
+        public async Task<int> DeleteAsync(int adminId)
         {
-            return await _adminRepository.DeleteAsync(id);
+            return await _adminRepository.DeleteAsync(adminId);
         }
 
         [HttpPost]

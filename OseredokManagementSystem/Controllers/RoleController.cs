@@ -24,23 +24,16 @@ namespace OseredokManagementSystem.Controllers
         }
 
         [HttpGet]
-        [Route("GetRoleById/{roleId}")]
+        [Route("{roleId}")]
         [ProducesResponseType(200, Type = typeof(RoleReadDto))]
         public async Task<RoleReadDto> GetRoleById(int roleId)
         {
             var role = await _roleRepository.GetRoleByIdAsync(roleId);
-            if (role == null)
-            {
-                throw new NotFoundException("The id is an invalid id");
-            }
-            else
-            {
-                return role;
-            }
+            return role;
         }
 
         [HttpGet]
-        [Route("GetRoleByName/{roleName}")]
+        [Route("role-name/{roleName}")]
         [ProducesResponseType(200, Type = typeof(RoleReadDto))]
         public async Task<RoleReadDto> GetRoleByName(string roleName)
         {

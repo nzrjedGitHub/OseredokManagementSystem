@@ -4,7 +4,7 @@ using OseredokManagementSystem.Shared.DTOs.SessionStatusDtos;
 
 namespace OseredokManagementSystem.Controllers
 {
-    [Route("api/sessionStatuses")]
+    [Route("api/session-Statuses")]
     [ApiController]
     public class SessionStatusController
     {
@@ -16,7 +16,6 @@ namespace OseredokManagementSystem.Controllers
         }
 
         [HttpGet]
-        [Route("GetSessionStatuses")]
         [ProducesResponseType(200, Type = typeof(IEnumerable<SessionStatusReadDto>))]
         public async Task<IEnumerable<SessionStatusReadDto>> GetSessionStatuses()
         {
@@ -24,7 +23,7 @@ namespace OseredokManagementSystem.Controllers
         }
 
         [HttpGet]
-        [Route("GetSessionStatusById/{sessionStatusId}")]
+        [Route("{sessionStatusId}")]
         [ProducesResponseType(200, Type = typeof(SessionStatusReadDto))]
         public async Task<SessionStatusReadDto> GetSessionStatusById(int sessionStatusId)
         {

@@ -16,7 +16,6 @@ namespace OseredokManagementSystem.Controllers
         }
 
         [HttpGet]
-        [Route("GetUsersFull")]
         [ProducesResponseType(200, Type = typeof(IEnumerable<UserFullReadDto>))]
         public async Task<IEnumerable<UserFullReadDto>> GetUsersFull()
         {
@@ -24,20 +23,20 @@ namespace OseredokManagementSystem.Controllers
         }
 
         [HttpGet]
-        [Route("GetUserFullById/{userId}")]
+        [Route("{userId}")]
         [ProducesResponseType(200, Type = typeof(UserFullReadDto))]
         public async Task<UserFullReadDto> GetUserFullById(int userId)
         {
             return await _userRepository.GetUserFullByIdAsync(userId);
         }
 
-        [HttpGet]
-        [Route("GetUserFullByPhoneNumber/{userPn}")]
-        [ProducesResponseType(200, Type = typeof(UserFullReadDto))]
-        public async Task<UserFullReadDto> GetUserFullByPhoneNumber(string userPn)
-        {
-            return await _userRepository.GetUserFullByPhoneNumberAsync(userPn);
-        }
+        //[HttpGet]
+        //[Route("GetUserFullByPhoneNumber/{userPn}")]
+        //[ProducesResponseType(200, Type = typeof(UserFullReadDto))]
+        //public async Task<UserFullReadDto> GetUserFullByPhoneNumber(string userPn)
+        //{
+        //    return await _userRepository.GetUserFullByPhoneNumberAsync(userPn);
+        //}
 
         //[HttpGet]
         //[Route("api/users/GetUsersFullByDoB/{userDoB}")]
@@ -55,42 +54,41 @@ namespace OseredokManagementSystem.Controllers
         //    return await _userRepository.GetUsersFullByDoRegAsync(userDoReg);
         //}
 
-        [HttpGet]
-        [Route("GetUsersFullByFirstName/{userFn}")]
-        [ProducesResponseType(200, Type = typeof(IEnumerable<UserFullReadDto>))]
-        public async Task<IEnumerable<UserFullReadDto>> GetUsersFullByFirstName(string userFn)
-        {
-            return await _userRepository.GetUsersFullByFirstNameAsync(userFn);
-        }
-
-        [HttpGet]
-        [Route("GetUsersFullByLastName/{userLn}")]
-        [ProducesResponseType(200, Type = typeof(IEnumerable<UserFullReadDto>))]
-        public async Task<IEnumerable<UserFullReadDto>> GetUsersFullByLastName(string userLn)
-        {
-            return await _userRepository.GetUsersFullByLastNameAsync(userLn);
-        }
-
-        [HttpGet]
-        [Route("GetUsersFullByMiddleName/{userMn}")]
-        [ProducesResponseType(200, Type = typeof(IEnumerable<UserFullReadDto>))]
-        public async Task<IEnumerable<UserFullReadDto>> GetUsersFullByMiddleName(string userMn)
-        {
-            return await _userRepository.GetUsersFullByMiddleNameAsync(userMn);
-        }
+        //[HttpGet]
+        //[Route("GetUsersFullByFirstName/{userFn}")]
+        //[ProducesResponseType(200, Type = typeof(IEnumerable<UserFullReadDto>))]
+        //public async Task<IEnumerable<UserFullReadDto>> GetUsersFullByFirstName(string userFn)
+        //{
+        //    return await _userRepository.GetUsersFullByFirstNameAsync(userFn);
+        //}
+        //
+        //[HttpGet]
+        //[Route("GetUsersFullByLastName/{userLn}")]
+        //[ProducesResponseType(200, Type = typeof(IEnumerable<UserFullReadDto>))]
+        //public async Task<IEnumerable<UserFullReadDto>> GetUsersFullByLastName(string userLn)
+        //{
+        //    return await _userRepository.GetUsersFullByLastNameAsync(userLn);
+        //}
+        //
+        //[HttpGet]
+        //[Route("GetUsersFullByMiddleName/{userMn}")]
+        //[ProducesResponseType(200, Type = typeof(IEnumerable<UserFullReadDto>))]
+        //public async Task<IEnumerable<UserFullReadDto>> GetUsersFullByMiddleName(string userMn)
+        //{
+        //    return await _userRepository.GetUsersFullByMiddleNameAsync(userMn);
+        //}
 
         [HttpPut]
-        [Route("UpdateUser")]
         public async Task<UserReadDto> UpdateUser(UserUpdateDto userUpdateDto)
         {
             return await _userRepository.UpdateUserAsync(userUpdateDto);
         }
 
         [HttpDelete]
-        [Route("{id}")]
-        public async Task<int> DeleteAsync(int id)
+        [Route("{userId}")]
+        public async Task<int> DeleteAsync(int userId)
         {
-            return await _userRepository.DeleteAsync(id);
+            return await _userRepository.DeleteAsync(userId);
         }
 
         [HttpPost]

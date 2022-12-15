@@ -16,7 +16,6 @@ namespace OseredokManagementSystem.Controllers
         }
 
         [HttpGet]
-        [Route("GetCoaches")]
         [ProducesResponseType(200, Type = typeof(IEnumerable<CoachReadDto>))]
         public async Task<IEnumerable<CoachReadDto>> GetCoaches()
         {
@@ -24,54 +23,53 @@ namespace OseredokManagementSystem.Controllers
         }
 
         [HttpGet]
-        [Route("GetCoachesByGymId/{gymId}")]
+        [Route("gym/{gymId}")]
         [ProducesResponseType(200, Type = typeof(IEnumerable<CoachReadDto>))]
         public async Task<IEnumerable<CoachReadDto>> GetCoachesByGymIdAsync(int gymId)
         {
             return await _coachRepository.GetCoachesByGymIdAsync(gymId);
         }
 
-        [HttpGet]
-        [Route("GetCoachesByFirstName/{coachFn}")]
-        [ProducesResponseType(200, Type = typeof(IEnumerable<CoachReadDto>))]
-        public async Task<IEnumerable<CoachReadDto>> GetCoachesByFirstName(string coachFn)
-        {
-            return await _coachRepository.GetCoachesByFirstNameAsync(coachFn);
-        }
+        //[HttpGet]
+        //[Route("GetCoachesByFirstName/{coachFn}")]
+        //[ProducesResponseType(200, Type = typeof(IEnumerable<CoachReadDto>))]
+        //public async Task<IEnumerable<CoachReadDto>> GetCoachesByFirstName(string coachFn)
+        //{
+        //    return await _coachRepository.GetCoachesByFirstNameAsync(coachFn);
+        //}
+
+        //[HttpGet]
+        //[Route("GetCoachesByLastName/{coachLn}")]
+        //[ProducesResponseType(200, Type = typeof(IEnumerable<CoachReadDto>))]
+        //public async Task<IEnumerable<CoachReadDto>> GetCoachesByLastName(string coachLn)
+        //{
+        //    return await _coachRepository.GetCoachesByLastNameAsync(coachLn);
+        //}
 
         [HttpGet]
-        [Route("GetCoachesByLastName/{coachLn}")]
-        [ProducesResponseType(200, Type = typeof(IEnumerable<CoachReadDto>))]
-        public async Task<IEnumerable<CoachReadDto>> GetCoachesByLastName(string coachLn)
-        {
-            return await _coachRepository.GetCoachesByLastNameAsync(coachLn);
-        }
-
-        [HttpGet]
-        [Route("GetCoachById/{coachId}")]
+        [Route("{coachId}")]
         [ProducesResponseType(200, Type = typeof(CoachReadDto))]
         public async Task<CoachReadDto> GetCoachById(int coachId)
         {
             return await _coachRepository.GetCoachByIdAsync(coachId);
         }
 
-        [HttpGet]
-        [Route("GetCoachByPhoneNumber/{coachPn}")]
-        [ProducesResponseType(200, Type = typeof(CoachReadDto))]
-        public async Task<CoachReadDto> GetCoachByPhoneNumber(string coachPn)
-        {
-            return await _coachRepository.GetCoachByPhoneNumberAsync(coachPn);
-        }
+        //[HttpGet]
+        //[Route("GetCoachByPhoneNumber/{coachPn}")]
+        //[ProducesResponseType(200, Type = typeof(CoachReadDto))]
+        //public async Task<CoachReadDto> GetCoachByPhoneNumber(string coachPn)
+        //{
+        //    return await _coachRepository.GetCoachByPhoneNumberAsync(coachPn);
+        //}
 
         [HttpPut]
-        [Route("UpdateCoach")]
         public async Task<CoachReadDto> UpdateCoach(CoachUpdateDto coachUpdateDto)
         {
             return await _coachRepository.UpdateCoachAsync(coachUpdateDto);
         }
 
         [HttpDelete]
-        [Route("{id}")]
+        [Route("{coachId}")]
         public async Task<int> DeleteAsync(int id)
         {
             return await _coachRepository.DeleteAsync(id);

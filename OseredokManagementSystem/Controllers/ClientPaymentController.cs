@@ -4,7 +4,7 @@ using OseredokManagementSystem.Shared.DTOs.ClientPaymentDtos;
 
 namespace OseredokManagementSystem.Controllers
 {
-    [Route("api/clientPayments")]
+    [Route("api/client-payments")]
     [ApiController]
     public class ClientPaymentController
     {
@@ -16,7 +16,7 @@ namespace OseredokManagementSystem.Controllers
         }
 
         [HttpGet]
-        [Route("GetClientPaymentById/{clientPaymentId}")]
+        [Route("{clientPaymentId}")]
         [ProducesResponseType(200, Type = typeof(ClientPaymentReadDto))]
         public async Task<ClientPaymentReadDto> GetClientPaymentById(int clientPaymentId)
         {
@@ -24,17 +24,16 @@ namespace OseredokManagementSystem.Controllers
         }
 
         [HttpPut]
-        [Route("UpdateClientPayment")]
         public async Task<ClientPaymentReadDto> UpdateClientPayment(ClientPaymentUpdateDto paymentUpdateDto)
         {
             return await _clentPaymentRepository.UpdateClientPaymentAsync(paymentUpdateDto);
         }
 
         [HttpDelete]
-        [Route("{id}")]
-        public async Task<int> DeleteAsync(int id)
+        [Route("{clientPaymentId}")]
+        public async Task<int> DeleteAsync(int clientPaymentId)
         {
-            return await _clentPaymentRepository.DeleteAsync(id);
+            return await _clentPaymentRepository.DeleteAsync(clientPaymentId);
         }
     }
 }
