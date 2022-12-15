@@ -25,6 +25,7 @@ builder.Services.AddScoped<IClientRepository, ClientRepository>();
 builder.Services.AddScoped<ISessionRepository, SessionRepository>();
 builder.Services.AddScoped<IClientPaymentRepository, ClientPaymentRepository>();
 builder.Services.AddScoped<ISessionStatusRepository, SessionStatusRepository>();
+builder.Services.AddScoped<IGymRepository, GymRepository>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>

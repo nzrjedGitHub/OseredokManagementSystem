@@ -4,6 +4,7 @@ using OseredokManagementSystem.Shared.DTOs.AdminDtos;
 using OseredokManagementSystem.Shared.DTOs.ClientDtos;
 using OseredokManagementSystem.Shared.DTOs.ClientPaymentDtos;
 using OseredokManagementSystem.Shared.DTOs.CoachDtos;
+using OseredokManagementSystem.Shared.DTOs.GymDtos;
 using OseredokManagementSystem.Shared.DTOs.RoleDtos;
 using OseredokManagementSystem.Shared.DTOs.SessionDtos;
 using OseredokManagementSystem.Shared.DTOs.SessionStatusDtos;
@@ -45,6 +46,10 @@ namespace OseredokManagementSystem.Server.Infrastructure.Mapping
             CreateMap<SessionCreateDto, Session>();
 
             CreateMap<SessionStatus, SessionStatusReadDto>();
+
+            CreateMap<Gym, GymReadDto>();
+            CreateMap<GymUpdateDto, Gym>();
+            CreateMap<GymCreateDto, Gym>();
         }
     }
 }
